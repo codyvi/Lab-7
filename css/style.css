@@ -3,11 +3,18 @@ body {
   background: #eee;
 }
 
-#animals {
+#themes {
   width: 70%;
 }
 
-.animal-item {
+#rating{
+  display: flex;
+  flex-wrap: row;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.theme-item {
   float: left;
   padding: 10px;
 }
