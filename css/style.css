@@ -7,13 +7,6 @@ body {
   width: 70%;
 }
 
-#rating{
-  display: flex;
-  flex-wrap: row;
-  text-align: center;
-  justify-content: space-evenly;
-}
-
 .theme-item {
   float: left;
   padding: 10px;
