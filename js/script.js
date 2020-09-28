@@ -23,7 +23,7 @@ $("#animal-buttons").on("click", "#temaButton", function(){
     }
 
     var req = {
-        url: `http://api.giphy.com/v1/gifs/search?q=${this.value}&api_key=RUR53dWJppQKtT8K0hNeWxaFMusjATY9&limit=10`,
+        url: `https://api.giphy.com/v1/gifs/search?q=${this.value}&api_key=RUR53dWJppQKtT8K0hNeWxaFMusjATY9&limit=10`,
         success: function(gifs){
             for(let i = 0; i < gifs.data.length; i++){
                 let img = $(`<img alt="${this.value}" name="img">`);
