@@ -64,8 +64,11 @@ $("body").on("click", ".theme-item", function(e) {
 
 $("#add-animal").on("click", function(e) {
     e.preventDefault();
-    var name = $("#animal-input").val();
-    $("#animal-buttons").append(`<input type="submit" id="temaButton" value="${name}">`);
+    let name = $("#animal-input").val();
+    if (name != "") {
+        $("#animal-buttons").append(`<input type="submit" id="temaButton" value="${name}">`);
+    }
+    $("#animal-input").val("");
 })
 
 
